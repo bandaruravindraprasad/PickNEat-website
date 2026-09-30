@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pick'N'Eat | Ice Creams & More</title>
+<meta name="description" content="Pick'N'Eat — Amul ice creams and frozen treats in Bandlaguda, Telangana. Browse products, MRP and shop location.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#home"><img src="logo.jpg" alt="Pick'N'Eat"></a>
+    <nav><a href="#home">Home</a><a href="#products">Products</a><a href="#gallery">Gallery</a><a href="#visit">Visit Us</a></nav>
+    <a class="map-btn" href="https://maps.app.goo.gl/xwJEqc8thWthagxH7?g_st=iw" target="_blank" rel="noopener">📍 Google Maps</a>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero wrap">
+  <div class="hero-copy">
+    <span class="pill">AMUL ICE CREAMS • PICK'N'EAT</span>
+    <h1>Pick your favourite.<br><span>Enjoy every scoop.</span></h1>
+    <p>Browse our ice-cream range and see the MRP for each pack. Visit Pick'N'Eat on Bandlaguda Road or open the live Google Maps listing for directions, reviews and the latest shop photos.</p>
+    <div class="hero-actions"><a class="primary" href="#products">Browse Ice Creams</a><a class="outline" href="https://maps.app.goo.gl/xwJEqc8thWthagxH7?g_st=iw" target="_blank" rel="noopener">Find Us on Maps</a></div>
+    <div class="mini-points"><span>✓ Amul range</span><span>✓ MRP displayed</span><span>✓ Mobile friendly</span></div>
+  </div>
+  <div class="hero-visual"><img src="logo.jpg" alt="Pick'N'Eat" class="hero-logo"><div class="hero-caption"><b>Ice Creams • Treats • More</b><span>Bandlaguda Road, Telangana</span></div></div>
+</section>
+
+<section class="trust wrap">
+  <div><strong>50+</strong><span>products listed</span></div>
+  <div><strong>₹</strong><span>MRP shown clearly</span></div>
+  <div><strong>📍</strong><span>Easy Maps directions</span></div>
+  <div><strong>🍦</strong><span>Amul ice creams</span></div>
+</section>
+
+<section id="products" class="section wrap">
+  <div class="section-title"><div><span class="eyebrow">ICE CREAM MENU</span><h2>Choose your treat</h2><p>Search by flavour, pack size or product type.</p></div></div>
+  <div class="filters"><input id="search" type="search" placeholder="Search chocolate, kulfi, tricone…"><select id="category"><option value="all">All categories</option></select></div>
+  <div class="notice">Prices shown are the <b>MRP printed on the recent Pick'N'Eat stock invoices</b>. MRP and availability can change when new stock arrives.</div>
+  <div id="grid" class="grid"></div>
+</section>
+
+<section id="gallery" class="section gallery wrap">
+  <div class="section-title"><div><span class="eyebrow">PICK'N'EAT</span><h2>See the shop</h2><p>For the latest real shop photos, customer reviews and current listing information, open our Google Maps listing.</p></div><a class="outline" href="https://maps.app.goo.gl/xwJEqc8thWthagxH7?g_st=iw" target="_blank" rel="noopener">Open live listing ↗</a></div>
+  <div class="gallery-card">
+    <img src="logo.jpg" alt="Pick'N'Eat shop banner">
+    <div class="gallery-content"><span class="pill">LIVE GOOGLE MAPS</span><h3>Pick'N'Eat (Amul Icecreams)</h3><p>Use Google Maps to see the latest customer-uploaded shop photos, reviews, directions and place updates.</p><a class="primary" href="https://maps.app.goo.gl/xwJEqc8thWthagxH7?g_st=iw" target="_blank" rel="noopener">View photos & reviews</a></div>
+  </div>
+</section>
+
+<section id="visit" class="visit wrap">
+  <div class="visit-copy"><span class="eyebrow">VISIT PICK'N'EAT</span><h2>Come by for your favourite flavour.</h2><p>Pick'N'Eat is on Bandlaguda Road, Telangana. Tap the button for the live location, directions and the latest place information.</p><div class="contact"><div><b>📍 Location</b><span>Bandlaguda Road, Telangana, India</span></div><div><b>📞 Phone</b><span>+91 98483 18801</span></div></div><a class="primary" href="https://maps.app.goo.gl/xwJEqc8thWthagxH7?g_st=iw" target="_blank" rel="noopener">Get Directions</a></div>
+  <div class="map-panel"><div class="map-grid"></div><div class="map-pin">📍</div><b>Pick'N'Eat</b><span>Amul Icecreams</span><a href="https://maps.app.goo.gl/xwJEqc8thWthagxH7?g_st=iw" target="_blank" rel="noopener">Open Google Maps ↗</a></div>
+</section>
+</main>
+
+<footer><div class="wrap footer"><div><img src="logo.jpg" alt="Pick'N'Eat"></div><div><b>Pick'N'Eat</b><br>Ice creams & everyday treats</div><div><a href="https://maps.app.goo.gl/xwJEqc8thWthagxH7?g_st=iw" target="_blank" rel="noopener">Google Maps</a></div></div></footer>
+
+<script>
+const products = [
+{name:'Jumbo Cup Chocolate Brownie',size:'125 ml',mrp:35,cat:'Jumbo Cups',img:'https://www.jiomart.com/images/product/original/491586111/amul-chocolate-brownie-ice-cream-125-ml-product-images-o491586111-p611952694-1-202508081649.jpg?im=Resize%3D%281000%2C1000%29'},
+{name:'Jumbo Cup Gold Butterscotch',size:'125 ml',mrp:40,cat:'Jumbo Cups',},
+{name:'Jumbo Cup Gold Choco Chips',size:'125 ml',mrp:40,cat:'Jumbo Cups',},
+{name:'Sugar Free Shahi Anjir',size:'125 ml',mrp:50,cat:'Jumbo Cups',img:''},
+{name:'Sundae Chocolate',size:'125 ml',mrp:35,cat:'Cups'},
+{name:'Jumbo Cup Sky Scooper Cookies',size:'125 ml',mrp:40,cat:'Jumbo Cups'},
+{name:'Jumbo Cup Spicy Guava',size:'125 ml',mrp:50,cat:'Jumbo Cups'},
+{name:'Jumbo Cup Strawberry Crush',size:'125 ml',mrp:50,cat:'Jumbo Cups'},
+{name:'Probiotic Chocobar Gold',size:'60 ml',mrp:20,cat:'Sticks',img:'https://www.bbassets.com/media/uploads/p/l/40236559_1-amul-chocobar-probiotic-gold-stick-ice-cream-rich-creamy-flavour-60-ml-paper-pack.jpg'},
+{name:'Frostik Gold',size:'70 ml',mrp:35,cat:'Sticks',img:'https://www.jiomart.com/images/product/original/493725963/amul-frostik-gold-ice-cream-stick-70-ml-product-images-o493725963-p612733888-0-202511111252.jpg?im=Resize%3D%281000%2C1000%29'},
+{name:'Duetz Gold',size:'60 ml',mrp:20,cat:'Sticks'},
+{name:'Bombay Kulfi',size:'60 ml',mrp:25,cat:'Kulfi'},
+{name:'Asli Aam Gold',size:'80 ml',mrp:30,cat:'Sticks'},
+{name:'Sandwich Chocolate Brownie Gold',size:'80 ml',mrp:40,cat:'Sandwich'},
+{name:'Cookie Sub Gold',size:'80 ml',mrp:30,cat:'Sandwich'},
+{name:'Tricone Gold Butterscotch',size:'120 ml',mrp:40,cat:'Tricone',img:''},
+{name:'Tricone Vanilla',size:'120 ml',mrp:30,cat:'Tricone',img:'https://www.bbassets.com/media/uploads/p/l/40344410_1-amul-choco-vanilla-tricone-ice-cream-120-ml.jpg'},
+{name:'Tricone Belgian Chocolate',size:'120 ml',mrp:50,cat:'Tricone',img:'https://www.bbassets.com/media/uploads/p/l/40344373_1-amul-belgian-chocolate-tricone-ice-cream-120-ml.jpg'},
+{name:'Tricone Cookies N Cream',size:'120 ml',mrp:35,cat:'Tricone'},
+{name:'Tricone Black Currant',size:'120 ml',mrp:30,cat:'Tricone',img:'https://www.bbassets.com/media/uploads/p/l/40344365_1-amul-black-currant-tricone-ice-cream.jpg'},
+{name:'Tricone Dark Chocolate',size:'120 ml',mrp:45,cat:'Tricone',img:'https://cdn.grofers.com/cdn-cgi/image/f%3Dauto%2Cfit%3Dscale-down%2Cq%3D70%2Cmetadata%3Dnone%2Cw%3D1080/da/cms-assets/cms/product/b24bbda5-7244-47ff-964d-bf11feac7384.png?bg_token=color.background.quaternary'},
+{name:'Tricone Double Chocolate',size:'120 ml',mrp:40,cat:'Tricone'},
+{name:'Vanilla Royale',size:'2 L',mrp:199,cat:'Party Packs'},
+{name:'Butterscotch',size:'2 L',mrp:225,cat:'Party Packs'},
+{name:'Gold Vanilla',size:'1 L',mrp:230,cat:'Tubs',img:'https://uat.amul.com/files/products/Amul-Cup-Vanilla-Royale.jpg'},
+{name:'Gold Butterscotch',size:'1 L',mrp:260,cat:'Tubs'},
+{name:'Gold King Alphonso',size:'1 L',mrp:260,cat:'Tubs'},
+{name:'Gold Kaju Draksh',size:'1 L',mrp:300,cat:'Tubs'},
+{name:'Tub Choco Chips',size:'1 L',mrp:230,cat:'Tubs'},
+{name:'Tub Chocolate Brownie',size:'1 L',mrp:230,cat:'Tubs'},
+{name:'Tub Fruit N Nut Fantasy',size:'1 L',mrp:210,cat:'Tubs'},
+{name:'Tub Rajbhog',size:'1 L',mrp:300,cat:'Tubs'},
+{name:'Combo Vanilla',size:'750 ml + 750 ml',mrp:230,cat:'Combo Packs'},
+{name:'Combo Butterscotch',size:'750 ml + 750 ml',mrp:270,cat:'Combo Packs'},
+{name:'Combo Choco Chips',size:'750 ml + 750 ml',mrp:260,cat:'Combo Packs'},
+{name:'Combo Strawberry',size:'750 ml + 750 ml',mrp:240,cat:'Combo Packs'},
+{name:'Kesar Pista Family Pack',size:'750 ml',mrp:195,cat:'Family Packs'},
+{name:'Kaju Draksh Family Pack',size:'750 ml',mrp:190,cat:'Family Packs'},
+{name:'Shahi Kulfi Rajbhog',size:'100 ml',mrp:70,cat:'Kulfi'},
+{name:'Shahi Kulfi Pista',size:'100 ml',mrp:70,cat:'Kulfi'},
+{name:'Pista Malai Kulfi',size:'60 ml',mrp:30,cat:'Kulfi'},
+{name:'Rajbhog Kulfi',size:'60 ml',mrp:30,cat:'Kulfi'},
+{name:'Epic Choco Truffle',size:'80 ml',mrp:50,cat:'Epic'},
+{name:'Epic Strawberry Twist Gold',size:'80 ml',mrp:90,cat:'Epic'},
+{name:'Tub Gold Vanilla',size:'1 L',mrp:230,cat:'Tubs'},
+{name:'Tub Gold Butterscotch',size:'1 L',mrp:260,cat:'Tubs'}
+];
+
+const fallbackColors={"Jumbo Cups":"🍨","Cups":"🍧","Sticks":"🍫","Kulfi":"🥜","Sandwich":"🍪","Tricone":"🍦","Party Packs":"🧊","Tubs":"🍨","Combo Packs":"🎁","Family Packs":"👨‍👩‍👧‍👦","Epic":"✨"};
+const grid=document.getElementById('grid'), search=document.getElementById('search'), category=document.getElementById('category');
+[...new Set(products.map(p=>p.cat))].sort().forEach(c=>{let o=document.createElement('option');o.value=c;o.textContent=c;category.appendChild(o)});
+function card(p){
+ const visual=p.img?`<img src="${p.img}" alt="${p.name} ${p.size}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'fallback\'><span>${fallbackColors[p.cat]||'🍦'}</span><small>Product image</small></div>'">`:`<div class="fallback"><span>${fallbackColors[p.cat]||'🍦'}</span><small>${p.cat}</small></div>`;
+ return `<article class="card"><div class="photo">${visual}</div><div class="body"><span class="tag">${p.cat}</span><h3>${p.name}</h3><div class="meta"><span>${p.size}</span><strong>₹${p.mrp}</strong></div><small class="mrp">MRP</small></div></article>`;
+}
+function render(){let q=search.value.toLowerCase().trim(), c=category.value;let list=products.filter(p=>(!q||(`${p.name} ${p.size} ${p.cat}`).toLowerCase().includes(q))&&(c==='all'||p.cat===c));grid.innerHTML=list.map(card).join('')||'<div class="empty">No matching products.</div>'}
+search.addEventListener('input',render);category.addEventListener('change',render);render();
+</script>
+</body></html>
